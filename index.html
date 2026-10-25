@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create New Account</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/theme.css">
+  <!-- Font Awesome for User Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="auth">
+
+  <!-- Main Card Wrapper -->
+  <div class="auth-card">
+    
+    <!-- User Icon / Avatar -->
+    <div class="avatar-circle">
+      <i class="fa-solid fa-user"></i>
+    </div>
+
+    <!-- Divider Heading -->
+    <div class="divider">
+      <span>CREATE NEW ACCOUNT</span>
+    </div>
+
+    <!-- Signup Form -->
+    <form action="pages/login.html">
+      <!-- Row 1: Name & Admin Name -->
+      <div class="form-row two" style="grid-template-columns:1fr 1fr;margin:0">
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Admin name">
+      </div>
+
+      <!-- Row 2: Country & City -->
+      <div class="form-row two" style="grid-template-columns:1fr 1fr;margin:0">
+        <input type="text" placeholder="Country">
+        <input type="text" placeholder="City">
+      </div>
+
+      <!-- Single Fields -->
+      <div class="form-group">
+        <input type="email" placeholder="Email">
+      </div>
+
+      <div class="form-group">
+        <input type="text" placeholder="Login">
+      </div>
+
+      <div class="form-group">
+        <input type="password" placeholder="Password">
+      </div>
+
+      <!-- Terms Checkbox -->
+      <div class="terms-group">
+        <input type="checkbox" id="terms">
+        <label for="terms">I agree to the Terms of Service and Privacy Policy.</label>
+      </div>
+
+      <!-- Create Company Button (Centered in Form) -->
+      <div class="btn-container">
+        <button type="submit" class="btn">Create company</button>
+      </div>
+    </form>
+
+    <p class="auth-link">Pehle se account hai? <a href="pages/login.html">Login</a></p>
+  </div>
+
+</body>
+</html>

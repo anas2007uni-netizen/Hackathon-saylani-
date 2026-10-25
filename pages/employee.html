@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Management</title>
+  <!-- Linking the separate CSS file -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/theme.css">
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <header class="navbar">
+    <a class="logo" href="dashboard.html">HCM Lite</a>
+    <nav class="nav-links">
+      <a href="dashboard.html" class="nav-item">Dashboard</a><a href="employee.html" class="nav-item active">Employees</a><a href="leave.html" class="nav-item">Leaves</a><a href="setting.html" class="nav-item">Settings</a><a href="payslip.html" class="nav-item">Payslip</a><a href="password.html" class="nav-item">Password</a><a href="login.html" class="nav-item logout">Logout</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <!-- Add Employee Card -->
+    <section class="card">
+      <div class="card-header">
+        <h2 class="card-title">Add New Employee</h2>
+        <p class="card-subtitle">Enter the details below to register a new employee to the system.</p>
+      </div>
+
+      <form>
+        <div class="form-grid grid-3">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="e.g. John Doe">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="john@company.com">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="••••••••">
+          </div>
+        </div>
+
+        <div class="form-grid grid-2" style="margin-top: 20px;">
+          <div class="form-group">
+            <label for="department">Department</label>
+            <select id="department">
+              <option value="" disabled selected>Select department</option>
+              <option value="engineering">Engineering</option>
+              <option value="hr">Human Resources</option>
+              <option value="sales">Sales & Marketing</option>
+              <option value="finance">Finance</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="salary">Monthly Salary ($)</label>
+            <input type="number" id="salary" placeholder="e.g. 4500">
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn btn-primary">Add Employee</button>
+          <button type="reset" class="btn btn-secondary">Clear Form</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Employee List Card -->
+    <section class="card">
+      <div class="card-header">
+        <h2 class="card-title">Employee Directory</h2>
+        <p class="card-subtitle">Manage and view all active employees.</p>
+      </div>
+
+      <div class="filter-bar">
+        <div class="form-group">
+          <input type="text" placeholder="Search by name or email address...">
+        </div>
+        <div class="form-group">
+          <select>
+            <option value="all">All Departments</option>
+            <option value="engineering">Engineering</option>
+            <option value="hr">Human Resources</option>
+            <option value="sales">Sales & Marketing</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Department</th>
+              <th>Salary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="4" class="empty-state">No employees added yet. Use the form above to add one.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

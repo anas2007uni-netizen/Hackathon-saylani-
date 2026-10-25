@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HCM Lite - Settings</title>
+  <!-- Separate CSS File Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/theme.css">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="navbar">
+    <a class="logo" href="dashboard.html">HCM Lite</a>
+    <nav class="nav-links">
+      <a href="dashboard.html" class="nav-item">Dashboard</a><a href="employee.html" class="nav-item">Employees</a><a href="leave.html" class="nav-item">Leaves</a><a href="setting.html" class="nav-item active">Settings</a><a href="payslip.html" class="nav-item">Payslip</a><a href="password.html" class="nav-item">Password</a><a href="login.html" class="nav-item logout">Logout</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+    <!-- Company Settings Card -->
+    <section class="card">
+      <h2 class="card-title">Company settings</h2>
+      
+      <form id="settingsForm">
+        <!-- Top Inputs Row -->
+        <div class="form-row three-cols">
+          
+          <div class="form-group">
+            <label for="startTime">Office start time</label>
+            <input type="time" id="startTime" value="09:00">
+          </div>
+
+          <div class="form-group">
+            <label for="graceMinutes">Grace minutes</label>
+            <input type="number" id="graceMinutes" value="15">
+          </div>
+
+          <div class="form-group">
+            <label for="leaveQuota">Yearly leave quota (days)</label>
+            <input type="number" id="leaveQuota" value="20">
+          </div>
+
+        </div>
+
+        <!-- Working Days Selection -->
+        <div class="working-days-section">
+          <label class="section-label">Working days</label>
+          <div class="checkbox-group">
+            
+            <label class="checkbox-label">
+              <input type="checkbox" name="working_days" value="sun"> Sun
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" name="working_days" value="mon" checked> Mon
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" name="working_days" value="tue" checked> Tue
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" name="working_days" value="wed" checked> Wed
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" name="working_days" value="thu" checked> Thu
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" name="working_days" value="fri" checked> Fri
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" name="working_days" value="sat"> Sat
+            </label>
+
+          </div>
+        </div>
+
+        <!-- Save Button -->
+        <div class="button-group">
+          <button type="submit" class="btn btn-primary">Save settings</button>
+        </div>
+
+      </form>
+    </section>
+
+  </main>
+
+</body>
+</html>

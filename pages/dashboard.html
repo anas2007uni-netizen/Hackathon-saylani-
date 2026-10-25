@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HCM Lite - Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/theme.css">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="navbar">
+    <a class="logo" href="dashboard.html">HCM Lite</a>
+    <nav class="nav-links">
+      <a href="dashboard.html" class="nav-item active">Dashboard</a><a href="employee.html" class="nav-item">Employees</a><a href="leave.html" class="nav-item">Leaves</a><a href="setting.html" class="nav-item">Settings</a><a href="payslip.html" class="nav-item">Payslip</a><a href="password.html" class="nav-item">Password</a><a href="login.html" class="nav-item logout">Logout</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+    <!-- Top Stats Cards Grid (5 Cards) -->
+    <section class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number">0</div>
+        <div class="stat-label">Employees</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">0</div>
+        <div class="stat-label">Checked in today</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">0</div>
+        <div class="stat-label">Late today</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">0</div>
+        <div class="stat-label">On leave today</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">0</div>
+        <div class="stat-label">Pending leaves</div>
+      </div>
+    </section>
+
+    <!-- Today's Attendance Section -->
+    <section class="card">
+      <h2 class="card-title">Today's attendance</h2>
+      <div class="table-responsive">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Employee</th>
+              <th>In</th>
+              <th>Out</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="4" class="empty-msg">No employees yet. Add some on the Employees page.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Announcements Section -->
+    <section class="card">
+      <h2 class="card-title">Announcements</h2>
+      
+      <!-- Post Form / Input Row -->
+      <div class="announcement-input-row">
+        <input type="text" placeholder="Write an announcement" class="announcement-input">
+        <button type="button" class="btn-post">Post</button>
+      </div>
+
+      <div class="empty-msg announcement-msg">
+        No announcements yet.
+      </div>
+    </section>
+
+
+    <!-- Smart Helper Section -->
+    <section class="card">
+      <h2 class="card-title">Smart helper</h2>
+      
+      <!-- Chat Greeting Box -->
+      <div class="smart-helper-box">
+        <p class="chat-greeting">Hi Ehsan Ask me about your data.</p>
+      </div>
+
+      <!-- Question Input & Ask Button -->
+      <div class="announcement-input-row">
+        <input type="text" placeholder="Type your question" class="announcement-input">
+        <button type="button" class="btn-post">Ask</button>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
